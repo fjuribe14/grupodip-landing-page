@@ -3,8 +3,12 @@ import { Link } from "react-router";
 import ToggleTheme from "@/components/ToggleTheme";
 import { Button } from "@/components/ui/button";
 import { TypographyH1 } from "@/components/ui/typography";
+import useI18n from "@/hooks/useI18n";
+import ToggleLanguage from "./ToggleLanguage";
 
 export default function Header() {
+  const { t } = useI18n();
+
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between gap-5">
@@ -14,21 +18,22 @@ export default function Header() {
         </div>
         <nav className="hidden md:flex items-center gap-10">
           <Link className="text-sm font-semibold" to="/servicios">
-            Servicios
+            {t("navbar.services")}
           </Link>
           <Link className="text-sm font-semibold" to="/proyectos">
-            Proyectos
+            {t("navbar.projects")}
           </Link>
           <Link className="text-sm font-semibold" to="/nosotros">
-            Nosotros
+            {t("navbar.about")}
           </Link>
           <Link className="text-sm font-semibold" to="/contacto">
-            Contacto
+            {t("navbar.contact")}
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Button className="font-bold">Cotizar Proyecto</Button>
+          <Button className="font-bold">{t("navbar.button")}</Button>
           <ToggleTheme className="hidden md:flex" />
+          <ToggleLanguage className="hidden md:flex" />
         </div>
       </div>
     </header>

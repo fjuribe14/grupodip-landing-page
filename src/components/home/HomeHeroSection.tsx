@@ -2,8 +2,11 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { TypographyH2, TypographyMuted } from "@/components/ui/typography";
+import useI18n from "@/hooks/useI18n";
 
 export default function HomeHeroSection() {
+  const { t } = useI18n();
+
   return (
     <section className="relative w-full min-h-[85vh] grid grid-cols-1 md:grid-cols-2 overflow-hidden">
       <img
@@ -28,7 +31,7 @@ export default function HomeHeroSection() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            Ingeniería Venezolana
+            {t("home.hero.badge")}
           </motion.div>
           <motion.div
             animate={{ translateY: 0, opacity: 1 }}
@@ -36,8 +39,7 @@ export default function HomeHeroSection() {
             transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
           >
             <TypographyH2 className="text-5xl md:text-6xl font-black text-navy dark:text-white leading-[1.1] mb-6">
-              Ingeniería de vanguardia para el{" "}
-              <span className="text-primary">futuro</span> de Venezuela
+              {t("home.hero.title")}
             </TypographyH2>
           </motion.div>
           <motion.div
@@ -49,10 +51,7 @@ export default function HomeHeroSection() {
               id="hero-text-3"
               className={"mb-10 leading-relaxed"}
             >
-              Desde 2012, lideramos la transformación industrial con precisión
-              técnica y excelencia en cada estructura. Especialistas en
-              metalurgia, infraestructura deportiva y obras civiles de gran
-              escala.
+              {t("home.hero.description")}
             </TypographyMuted>
           </motion.div>
           <motion.div
@@ -66,7 +65,7 @@ export default function HomeHeroSection() {
               id="hero-button"
               className="font-bold bg-navy hover:bg-navy/90"
             >
-              Nuestros Servicios
+              {t("home.hero.button")}
               <ArrowRight className="size-4" />
             </Button>
             <Button
@@ -75,7 +74,7 @@ export default function HomeHeroSection() {
               variant="outline"
               className="text-navy dark:text-white font-bold"
             >
-              Ver Portafolio
+              {t("home.hero.button2")}
             </Button>
           </motion.div>
         </div>

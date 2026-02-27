@@ -1,0 +1,42 @@
+{
+  "navbar": {
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "button": "Cotizar Proyecto"
+  },
+  "home": {
+    "hero": {
+      "badge": "Ingeniería Venezolana",
+      "title": "Ingeniería de vanguardia para el futuro de Venezuela",
+      "description": "Desde 2012, lideramos la transformación industrial con precisión técnica y excelencia en cada estructura. Especialistas en metalurgia, infraestructura deportiva y obras civiles de gran escala.",
+      "button": "Ver Nuestros Proyectos",
+      "button2": "Ver portafolio"
+    },
+    "stats": {
+      "section1": "Años de Trayectoria",
+      "section2": "Proyectos Exitosos",
+      "section3": "Toneladas de Acero",
+      "section4": "Soporte Técnico"
+    },
+    "services": {
+      "badge": "Especialidades",
+      "title": "Soluciones Integrales de Ingeniería",
+      "cards": [
+        {
+          "title": "Metalurgia e Industrial",
+          "description": "Fabricación y montaje de estructuras metálicas de alta resistencia, silos industriales y galpones a medida."
+        },
+        {
+          "title": "Maquinaria Pesada",
+          "description": "Flota moderna de excavadoras, grúas y equipos especializados para movimientos de tierra y logística pesada."
+        },
+        {
+          "title": "Obras Civiles y Deporte",
+          "description": "Desarrollo de infraestructura urbana, estadios y complejos deportivos con estándares internacionales."
+        }
+      ]
+    }
+  }
+}

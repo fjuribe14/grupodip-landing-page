@@ -1,0 +1,42 @@
+{
+  "navbar": {
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "button": "Quote Project"
+  },
+  "home": {
+    "hero": {
+      "badge": "Venezuelan Engineering",
+      "title": "Engineering and Construction for the Future of Venezuela",
+      "description": "Since 2012, we have led industrial transformation with technical precision and excellence in every structure. Specialists in metallurgy, sports infrastructure, and large-scale civil works.",
+      "button": "See Our Projects",
+      "button2": "See portfolio"
+    },
+    "stats": {
+      "section1": "Years of Experience",
+      "section2": "Successful Projects",
+      "section3": "Tons of Steel",
+      "section4": "Technical Support"
+    },
+    "services": {
+      "badge": "Specialties",
+      "title": "Comprehensive Engineering Solutions",
+      "cards": [
+        {
+          "title": "Metallurgy and Industrial",
+          "description": "Manufacturing and assembly of high-strength metal structures, industrial silos, and custom warehouses."
+        },
+        {
+          "title": "Heavy Machinery",
+          "description": "Modern fleet of excavators, cranes, and specialized equipment for earthmoving and heavy logistics."
+        },
+        {
+          "title": "Civil Works and Sports",
+          "description": "Development of urban infrastructure, stadiums, and sports complexes meeting international standards."
+        }
+      ]
+    }
+  }
+}
