@@ -1,11 +1,9 @@
-import ToggleTheme from "@/components/ToggleTheme";
-import { Button } from "@/components/ui/button";
+import HomeHero from "@/components/home/HomeHero";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <Button>Click me</Button>
-      <ToggleTheme />
-    </div>
+    <>
+      <HomeHero />
+    </>
   );
 }
