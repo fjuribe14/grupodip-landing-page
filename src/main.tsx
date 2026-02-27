@@ -1,14 +1,10 @@
-import "./index.css";
+import "@/index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import RoutesProvider from "./providers/RoutesProvider";
+import Providers from "@/providers";
 
-const rootElement = document.getElementById("root");
-
-if (rootElement) {
-  createRoot(rootElement).render(
-    <StrictMode>
-      <RoutesProvider />
-    </StrictMode>,
-  );
-}
+createRoot(document.getElementById("root") as HTMLElement).render(
+  <StrictMode>
+    <Providers />
+  </StrictMode>,
+);

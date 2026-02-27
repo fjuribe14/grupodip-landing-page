@@ -4,7 +4,15 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Public Sans";
+  src: url("./assets/fonts/PublicSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 @theme inline {
+  --font-sans: "Public Sans", sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
