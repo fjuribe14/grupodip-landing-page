@@ -1,9 +1,11 @@
-import HomeHero from "@/components/home/HomeHero";
+import HomeHeroSection from "@/components/home/HomeHeroSection";
+import HomeStatsSection from "@/components/home/HomeStatsSection";
 
 export default function Home() {
   return (
     <>
-      <HomeHero />
+      <HomeHeroSection />
+      <HomeStatsSection />
     </>
   );
 }
