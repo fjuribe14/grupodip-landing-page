@@ -8,30 +8,42 @@ export default function HomeShowcaseImages() {
       <div className="grid grid-cols-2 gap-4">
         <div className="space-y-4">
           <div className="h-64 rounded-xl overflow-hidden shadow-lg">
-            <div
-              className="w-full h-full bg-cover bg-center bg-[url('/showcase/1.webp')]"
-              data-alt="Close up of steel beam connection"
-            ></div>
+            <img
+              src="/showcase/1.webp"
+              alt="Close up of steel beam connection"
+              className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="h-48 rounded-xl overflow-hidden shadow-lg">
-            <div
-              className="w-full h-full bg-cover bg-center bg-[url('/showcase/2.webp')]"
-              data-alt="Engineer looking at blueprints on site"
-            ></div>
+            <img
+              src="/showcase/2.webp"
+              alt="Engineer looking at blueprints on site"
+              className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
         <div className="space-y-4 pt-8">
           <div className="h-48 rounded-xl overflow-hidden shadow-lg">
-            <div
-              className="w-full h-full bg-cover bg-center bg-[url('/showcase/3.webp')]"
-              data-alt="Large yellow excavator in action"
-            ></div>
+            <img
+              src="/showcase/3.webp"
+              alt="Large yellow excavator in action"
+              className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
           <div className="h-64 rounded-xl overflow-hidden shadow-lg">
-            <div
-              className="w-full h-full bg-cover bg-center bg-[url('/showcase/4.webp')]"
-              data-alt="Modern soccer stadium interior"
-            ></div>
+            <img
+              src="/showcase/4.webp"
+              alt="Modern soccer stadium interior"
+              className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </div>

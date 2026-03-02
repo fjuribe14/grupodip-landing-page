@@ -14,18 +14,21 @@ export default function HomeHeroSection() {
         src="/hero.webp"
         alt="Grupo Dip - Construcción y Servicios"
         className="w-full object-cover max-h-[85vh] bg-linear-to-r from-navy/40 to-transparent hidden md:block"
+        fetchPriority="high"
+        loading="eager"
+        decoding="sync"
       />
       <motion.div
         animate={{ translateX: 0 }}
-        transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
+        transition={{ duration: 0.6, delay: 0, ease: "easeOut" }}
         initial={{ translateX: "-90%" }}
         className="flex flex-col justify-center md:px-16 py-16 bg-background"
       >
         <div className="px-6 md:max-w-xl">
           <motion.div
             animate={{ translateY: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1, ease: "easeOut" }}
-            initial={{ translateY: 100, opacity: 0 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            initial={{ translateY: 50, opacity: 0 }}
           >
             <TextBadge className="font-bold uppercase tracking-widest mb-6">
               <span className="relative flex h-2 w-2">
@@ -37,8 +40,8 @@ export default function HomeHeroSection() {
           </motion.div>
           <motion.div
             animate={{ translateY: 0, opacity: 1 }}
-            initial={{ translateY: 100, opacity: 0 }}
-            transition={{ duration: 1, delay: 1.2, ease: "easeOut" }}
+            initial={{ translateY: 50, opacity: 0 }}
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
           >
             <TypographyH2 className="text-5xl md:text-6xl font-black text-navy dark:text-white leading-[1.1] mb-6">
               {t("home.hero.title")}
@@ -46,8 +49,8 @@ export default function HomeHeroSection() {
           </motion.div>
           <motion.div
             animate={{ translateY: 0, opacity: 1 }}
-            initial={{ translateY: 100, opacity: 0 }}
-            transition={{ duration: 1, delay: 1.3, ease: "easeOut" }}
+            initial={{ translateY: 50, opacity: 0 }}
+            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           >
             <TypographyMuted
               id="hero-text-3"
@@ -58,8 +61,8 @@ export default function HomeHeroSection() {
           </motion.div>
           <motion.div
             animate={{ translateY: 0, opacity: 1 }}
-            initial={{ translateY: 100, opacity: 0 }}
-            transition={{ duration: 1, delay: 1.4, ease: "easeOut" }}
+            initial={{ translateY: 50, opacity: 0 }}
+            transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
             className="flex flex-wrap gap-4"
           >
             <Button

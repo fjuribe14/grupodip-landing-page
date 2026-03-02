@@ -1,5 +1,5 @@
 import { Settings2Icon } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { useMemo } from "react";
 import type { THomeServicesCardProps } from "@/components/home/services/HomeServicesCard";
 import HomeServicesCard from "@/components/home/services/HomeServicesCard";
@@ -45,21 +45,19 @@ export default function HomeServicesSection() {
           </TypographyH2>
         </div>
       </div>
-      <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-7xl mx-auto pb-8">
-        <AnimatePresence>
-          {services.map((service, i) => (
-            <motion.div
-              key={service.title}
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -100 }}
-              transition={{ duration: 0.8, delay: i * 0.1 }}
-            >
-              <HomeServicesCard {...service} />
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </motion.div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 max-w-7xl mx-auto pb-8">
+        {services.map((service, i) => (
+          <motion.div
+            key={service.title}
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.6, delay: i * 0.1 }}
+          >
+            <HomeServicesCard {...service} />
+          </motion.div>
+        ))}
+      </div>
     </section>
   );
 }
