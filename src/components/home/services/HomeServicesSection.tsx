@@ -1,38 +1,45 @@
 import { Settings2Icon } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
+import { useMemo } from "react";
 import type { THomeServicesCardProps } from "@/components/home/services/HomeServicesCard";
 import HomeServicesCard from "@/components/home/services/HomeServicesCard";
+import TextBadge from "@/components/TextBadge";
 import { TypographyH2 } from "@/components/ui/typography";
 import useI18n from "@/hooks/useI18n";
 
 export default function HomeServicesSection() {
   const { t } = useI18n();
 
-  const services: THomeServicesCardProps[] = [
-    {
-      icon: Settings2Icon,
-      title: t("home.services.cards.0.title"),
-      description: t("home.services.cards.0.description"),
-    },
-    {
-      icon: Settings2Icon,
-      title: t("home.services.cards.1.title"),
-      description: t("home.services.cards.1.description"),
-    },
-    {
-      icon: Settings2Icon,
-      title: t("home.services.cards.2.title"),
-      description: t("home.services.cards.2.description"),
-    },
-  ];
+  const services: THomeServicesCardProps[] = useMemo(
+    () => [
+      {
+        icon: Settings2Icon,
+        title: t("home.services.cards.0.title"),
+        description: t("home.services.cards.0.description"),
+      },
+      {
+        icon: Settings2Icon,
+        title: t("home.services.cards.1.title"),
+        description: t("home.services.cards.1.description"),
+      },
+      {
+        icon: Settings2Icon,
+        title: t("home.services.cards.2.title"),
+        description: t("home.services.cards.2.description"),
+      },
+    ],
+    [t],
+  );
+
+  if (!services) return null;
 
   return (
-    <section className="py-24 bg-silver/30 dark:bg-background-dark/50">
+    <section className="py-24 bg-neutral-100 dark:bg-neutral-900/20">
       <div className="max-w-7xl mx-auto px-6 mb-6 md:mb-12 flex justify-between items-end">
         <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+          <TextBadge className="font-bold uppercase tracking-widest mb-6">
             {t("home.services.badge")}
-          </div>
+          </TextBadge>
           <TypographyH2 className="font-black text-navy dark:text-white">
             {t("home.services.title")}
           </TypographyH2>

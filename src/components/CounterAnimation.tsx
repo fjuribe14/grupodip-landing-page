@@ -1,13 +1,15 @@
 import { animate, motion, useMotionValue, useTransform } from "motion/react";
 import { useEffect } from "react";
 
-type TCounterAnimationProps = {
+export type TCounterAnimationType = "double" | "number";
+
+export type TCounterAnimationProps = {
   value: number;
   suffix?: string;
   delay?: number;
   duration?: number;
   className?: string;
-  type?: "number" | "double";
+  type?: TCounterAnimationType;
 };
 
 export default function CounterAnimation({

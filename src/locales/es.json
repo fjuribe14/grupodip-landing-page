@@ -37,6 +37,26 @@
           "description": "Desarrollo de infraestructura urbana, estadios y complejos deportivos con estándares internacionales."
         }
       ]
+    },
+    "showcase": {
+      "badge": "¿Por qué elegir Grupo Dip?",
+      "title": "Precisión técnica en cada detalle estructural",
+      "list": [
+        {
+          "title": "Materiales de Alta Calidad",
+          "description": "Utilizamos aleaciones y concreto bajo normativas internacionales para garantizar durabilidad extrema."
+        },
+        {
+          "title": "Logística de Gran Alcance",
+          "description": "Capacidad para operar en todo el territorio nacional, incluso en las zonas más remotas o de difícil acceso."
+        },
+        {
+          "title": "Cumplimiento de Cronogramas",
+          "description": "Gestión de proyectos optimizada para entrega en tiempos récord sin comprometer la seguridad."
+        }
+      ],
+      "button": "Inicia tu proyecto hoy",
+      "experience": "Años Construyendo"
     }
   }
 }

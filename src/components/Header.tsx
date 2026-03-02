@@ -31,7 +31,7 @@ export default function Header() {
           </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Button className="font-bold">{t("navbar.button")}</Button>
+          <Button>{t("navbar.button")}</Button>
           <ToggleTheme className="hidden md:flex" />
           <ToggleLanguage className="hidden md:flex" />
         </div>

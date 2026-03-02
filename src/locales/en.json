@@ -37,6 +37,26 @@
           "description": "Development of urban infrastructure, stadiums, and sports complexes meeting international standards."
         }
       ]
+    },
+    "showcase": {
+      "badge": "Why choose Grupo Dip?",
+      "title": "Technical precision in every structural detail",
+      "list": [
+        {
+          "title": "High-Quality Materials",
+          "description": "We use alloys and concrete under international standards to guarantee extreme durability."
+        },
+        {
+          "title": "Extensive Logistics",
+          "description": "Capacity to operate throughout the national territory, even in the most remote or difficult-to-access areas."
+        },
+        {
+          "title": "Schedule Compliance",
+          "description": "Optimized project management for record-time delivery without compromising safety."
+        }
+      ],
+      "button": "Start your project today",
+      "experience": "Years Building"
     }
   }
 }

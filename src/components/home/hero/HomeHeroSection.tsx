@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
+import TextBadge from "@/components/TextBadge";
 import { Button } from "@/components/ui/button";
 import { TypographyH2, TypographyMuted } from "@/components/ui/typography";
 import useI18n from "@/hooks/useI18n";
@@ -25,13 +26,14 @@ export default function HomeHeroSection() {
             animate={{ translateY: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1, ease: "easeOut" }}
             initial={{ translateY: 100, opacity: 0 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6"
           >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-            </span>
-            {t("home.hero.badge")}
+            <TextBadge className="font-bold uppercase tracking-widest mb-6">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              </span>
+              {t("home.hero.badge")}
+            </TextBadge>
           </motion.div>
           <motion.div
             animate={{ translateY: 0, opacity: 1 }}
@@ -63,17 +65,12 @@ export default function HomeHeroSection() {
             <Button
               size="lg"
               id="hero-button"
-              className="font-bold bg-navy hover:bg-navy/90"
+              className=" bg-navy hover:bg-navy/90"
             >
               {t("home.hero.button")}
               <ArrowRight className="size-4" />
             </Button>
-            <Button
-              size={"lg"}
-              id="hero-button"
-              variant="outline"
-              className="text-navy dark:text-white font-bold"
-            >
+            <Button size={"lg"} id="hero-button" variant="outline">
               {t("home.hero.button2")}
             </Button>
           </motion.div>
