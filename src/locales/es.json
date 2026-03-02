@@ -6,13 +6,41 @@
     "contact": "Contacto",
     "button": "Cotizar Proyecto"
   },
+  "footer": {
+    "description": "Construyendo infraestructuras sólidas y duraderas para el desarrollo industrial y social de Venezuela desde hace más de una década.",
+    "copyright": "Todos los derechos reservados.",
+    "links": {
+      "services": {
+        "title": "Servicios",
+        "items": [
+          "Metalurgia Pesada",
+          "Obras Civiles",
+          "Infraestructura Deportiva",
+          "Alquiler de Maquinaria"
+        ]
+      },
+      "company": {
+        "title": "Compañía",
+        "items": [
+          "Nuestra Historia",
+          "Sostenibilidad",
+          "Proyectos Realizados",
+          "Carreras"
+        ]
+      },
+      "contact": {
+        "title": "Contacto",
+        "items": ["Teléfono", "Correo Electrónico", "Dirección"]
+      }
+    }
+  },
   "home": {
     "hero": {
       "badge": "Ingeniería Venezolana",
       "title": "Ingeniería de vanguardia para el futuro de Venezuela",
       "description": "Desde 2012, lideramos la transformación industrial con precisión técnica y excelencia en cada estructura. Especialistas en metalurgia, infraestructura deportiva y obras civiles de gran escala.",
       "button": "Ver Nuestros Proyectos",
-      "button2": "Ver portafolio"
+      "button2": "Ver Portafolio"
     },
     "stats": {
       "section1": "Años de Trayectoria",
@@ -57,6 +85,12 @@
       ],
       "button": "Inicia tu proyecto hoy",
       "experience": "Años Construyendo"
+    },
+    "cta": {
+      "title": "¿Listo para llevar su infraestructura al siguiente nivel?",
+      "description": "Solicite un presupuesto sin compromiso y hable con uno de nuestros ingenieros especializados.",
+      "button1": "Agendar Consultoría",
+      "button2": "Descargar catálogo"
     }
   }
 }

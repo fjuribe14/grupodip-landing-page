@@ -12,19 +12,19 @@ const HomeShowcaseSection = lazy(
 const HomeStatsSection = lazy(
   () => import("@/components/home/stats/HomeStatsSection"),
 );
+const HomeCTASection = lazy(
+  () => import("@/components/home/cta/HomeCTASection"),
+);
 
 export default function Home() {
   return (
     <>
-      {/* Hero has its own Suspense so it renders independently — no fallback needed */}
-      <Suspense>
-        <HomeHeroSection />
-      </Suspense>
-      {/* Below-fold sections share a boundary with a minimal height placeholder */}
+      <HomeHeroSection />
       <Suspense fallback={<div className="min-h-screen" />}>
         <HomeStatsSection />
         <HomeServicesSection />
         <HomeShowcaseSection />
+        <HomeCTASection />
       </Suspense>
     </>
   );

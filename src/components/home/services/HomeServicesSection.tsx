@@ -1,4 +1,4 @@
-import { Settings2Icon } from "lucide-react";
+import { SchoolIcon, SlidersVertical, TractorIcon } from "lucide-react";
 import { motion } from "motion/react";
 import { useMemo } from "react";
 import type { THomeServicesCardProps } from "@/components/home/services/HomeServicesCard";
@@ -13,17 +13,17 @@ export default function HomeServicesSection() {
   const services: THomeServicesCardProps[] = useMemo(
     () => [
       {
-        icon: Settings2Icon,
+        icon: SlidersVertical,
         title: t("home.services.cards.0.title"),
         description: t("home.services.cards.0.description"),
       },
       {
-        icon: Settings2Icon,
+        icon: TractorIcon,
         title: t("home.services.cards.1.title"),
         description: t("home.services.cards.1.description"),
       },
       {
-        icon: Settings2Icon,
+        icon: SchoolIcon,
         title: t("home.services.cards.2.title"),
         description: t("home.services.cards.2.description"),
       },

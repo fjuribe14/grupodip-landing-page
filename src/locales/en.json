@@ -6,13 +6,41 @@
     "contact": "Contact",
     "button": "Quote Project"
   },
+  "footer": {
+    "description": "Building solid and durable infrastructure for industrial and social development in Venezuela for more than a decade.",
+    "copyright": "All rights reserved.",
+    "links": {
+      "services": {
+        "title": "Services",
+        "items": [
+          "Heavy Metalurgy",
+          "Civil Works",
+          "Sports Infrastructure",
+          "Machine Rental"
+        ]
+      },
+      "company": {
+        "title": "Company",
+        "items": [
+          "Our History",
+          "Sustainability",
+          "Projects Completed",
+          "Careers"
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "items": ["Phone", "Email", "Address"]
+      }
+    }
+  },
   "home": {
     "hero": {
       "badge": "Venezuelan Engineering",
-      "title": "Engineering and Construction for the Future of Venezuela",
+      "title": "Engineering and Construction for the future of Venezuela",
       "description": "Since 2012, we have led industrial transformation with technical precision and excellence in every structure. Specialists in metallurgy, sports infrastructure, and large-scale civil works.",
       "button": "See Our Projects",
-      "button2": "See portfolio"
+      "button2": "See Portfolio"
     },
     "stats": {
       "section1": "Years of Experience",
@@ -57,6 +85,12 @@
       ],
       "button": "Start your project today",
       "experience": "Years Building"
+    },
+    "cta": {
+      "title": "Ready to take your infrastructure to the next level?",
+      "description": "Request a free quote and speak with one of our specialized engineers.",
+      "button1": "Schedule Consultation",
+      "button2": "Download Catalog"
     }
   }
 }

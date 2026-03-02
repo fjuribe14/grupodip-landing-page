@@ -15,7 +15,6 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          "vendor-react": ["react", "react-dom"],
           "vendor-motion": ["motion"],
           "vendor-i18n": [
             "i18next",
