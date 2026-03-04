@@ -108,9 +108,53 @@
   },
   "about": {
     "hero": {
-      "badge": "Sobre Nosotros",
-      "title": "Mas de una decada de trayectoria y excelencia",
-      "description": "Grupo Dip, C.A, es una empresa fundada en el año 2012, con capital y socios 100% venezolanos, que en sus inicios se especializó en brindar productos y servicios dirigidos al área deportiva y corporativa. Esta experiencia permitió a nuestra empresa visualizar las necesidades de los diferentes entes del Estado a los cuales atendimos satisfactoriamente, y es por ello que en el año 2019 decidimos adaptarnos a la coyuntura que atravesaba nuestro País y enfocar nuestros servicios al área de Proyectos. \nEsta iniciativa nos ha permitido brindar servicios tales como: Ingeniería civil, mecánica y eléctrica, auditorías de calidad para contratación de obras, remodelaciones de obras civiles de todo tipo, obras electromecánicas, gimnasios, canchas, polideportivos, anﬁteatros, auditorios, movimientos de tierra, diagnóstico, desarrollos industriales, inspección de obras de procura, proyectos multidisciplinarios, representaciones legales, maquinaria pesada y venta de equipos e insumos, servicios en lo referente a la metalúrgica, transformación y exportación de material estratégico susceptible de reciclaje, los desechos y residuos metálicos ferrosos u otro tipo de metal, contando con toda la permisología exigida para esta actividad. Es importante resaltar, que en la actualidad Grupo Dip,C.A. se encuentra ejecutando varias obras y proyectos a diferentes organismos públicos del Estado venezolano, es por ello que colocamos a su entera disposición todos nuestros servicios en el área de proyectos, aportando la experiencia certiﬁcada de nuestro capital humano en aras del desarrollo de la Venezuela Potencia."
+      "badge": "Nuestra Historia",
+      "title": "Más de una década de trayectoria y excelencia",
+      "description": "<strong>Grupo Dip, C.A</strong>, es una empresa fundada en el año 2012, con capital y socios 100% venezolanos, que en sus inicios se especializó en brindar productos y servicios dirigidos al área deportiva y corporativa.",
+      "descriptions": [
+        "Esta experiencia permitió a nuestra empresa visualizar las necesidades de los diferentes entes del Estado a los cuales atendimos satisfactoriamente, y es por ello que en el año 2019 decidimos adaptarnos a la coyuntura que atravesaba nuestro País y enfocar nuestros servicios al área de Proyectos.",
+        "Esta iniciativa nos ha permitido brindar servicios tales como: <strong>Ingeniería civil, mecánica y eléctrica, auditorías de calidad para contratación de obras, remodelaciones de obras civiles de todo tipo, obras electromecánicas, gimnasios, canchas, polideportivos, anﬁteatros, auditorios, movimientos de tierra, diagnóstico, desarrollos industriales, inspección de obras de procura, proyectos multidisciplinarios, representaciones legales, maquinaria pesada y venta de equipos e insumos, servicios en lo referente a la metalúrgica, transformación y exportación de material estratégico susceptible de reciclaje, los desechos y residuos metálicos ferrosos u otro tipo de metal, contando con toda la permisología exigida para esta actividad.</strong>",
+        "Es importante resaltar, que en la actualidad Grupo Dip,C.A. se encuentra ejecutando varias obras y proyectos a diferentes organismos públicos del Estado venezolano, es por ello que colocamos a su entera disposición todos nuestros servicios en el <strong>área de proyectos</strong>, aportando la experiencia certiﬁcada de nuestro capital humano en aras del desarrollo de la <strong>Venezuela Potencia</strong>."
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Nuestra Misión",
+        "description": "Nuestra misión es ser una empresalíder e innovadora en el desarrollo deProyectos en general,todo conexcelentes estándares de calidadnacional e internacional, con recursohumano altamente capacitado, a lavanguardia en materia tecnológica ymaquinaria de punta, buscando lasatisfacción de nuestros clientes.Apostamos a que todo lo que serealice con mano de obra venezolana,sea en aras de enaltecer los valoresdel trabajo, nuestro compromiso esﬁrme para ser protagonistas en eldesarrollo económico y social denuestro País."
+      },
+      {
+        "title": "Nuestra Visión",
+        "description": "Convertirnos en la empresa líder en el desarrollo de proyectos innovadores y sostenibles, con mano de obra caliﬁcada, transformando espacios en entornos que mejoren la calidad de vida de la población. Nuestra visión es ser una empresa de vanguardia que contribuya al impulso económico de Venezuela en estos tiempos donde el compromiso con la Patria es innegociable."
+      }
+    ],
+    "values": {
+      "badge": "Nuestros Valores",
+      "items": [
+        {
+          "title": "Honestidad",
+          "description": "Rectitud, transparencia, calidad humana en nuestras acciones y toma de decisión."
+        },
+        {
+          "title": "Integridad",
+          "description": "Contar con principios morales y un trabajo constante para la creación de un mejor futuro."
+        },
+        {
+          "title": "Calidad",
+          "description": "Respuesta satisfactoria a las necesidades y expectativas de los requerimientos solicitados."
+        },
+        {
+          "title": "Trabajo en Equipo",
+          "description": "Trabajo constante, fomentando el mismo con equipos con alto niveles de eﬁciencia y profesionalismo."
+        },
+        {
+          "title": "Innovación",
+          "description": "Hacer más fácil la vida de las personas. Pero sobre todo, se basa en que estos avances lleguen a quienes los necesitan."
+        },
+        {
+          "title": "Sostenibilidad",
+          "description": "Estamos comprometidos con la protección del medio ambiente y la contribución al desarrollo sostenible de nuestro país."
+        }
+      ]
     }
   }
 }

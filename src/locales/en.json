@@ -96,9 +96,53 @@
   },
   "about": {
     "hero": {
-      "badge": "About Us",
+      "badge": "Our History",
       "title": "More than a decade of experience and excellence",
-      "description": "Grupo Dip, C.A, is a company founded in 2012, with 100% Venezuelan capital and partners, which initially specialized in providing products and services for the sports and corporate sector. This experience allowed our company to identify the needs of the different state entities that we served satisfactorily, and that is why in 2019 we decided to adapt to the circumstances our country was going through and focus our services on the Projects area. This initiative has allowed us to provide services such as: Civil, mechanical and electrical engineering, quality audits for contract awards, remodeling of civil works of all types, electromechanical works, gyms, courts, sports centers, amphitheaters, auditoriums, earthmoving, diagnosis, industrial developments, inspection of procurement works, multidisciplinary projects, legal representation, heavy machinery and sale of equipment and supplies, services related to metallurgy, transformation and export of strategic material susceptible to recycling, ferrous metal waste or other types of metal, having all the required permits for this activity. It is important to highlight that Grupo Dip, C.A. is currently carrying out several works and projects for different public organizations of the Venezuelan State, which is why we place at your disposal all our services in the projects area, contributing the certified experience of our human capital for the development of Venezuela Potencia."
+      "description": "<strong>Grupo Dip, C.A</strong>, is a company founded in 2012, with 100% Venezuelan capital and partners, which initially specialized in providing products and services for the sports and corporate sector.",
+      "descriptions": [
+        "This experience allowed our company to visualize the needs of the different State entities to which we satisfactorily attended, and it is for this reason that in 2019 we decided to adapt to the circumstances that were traversing our country and focus our services on the area of Projects.",
+        "This initiative allowed us to provide services such as: <strong>Engineering civil, mechanical and electrical, quality audits for contract works, civil works remodeling of all types, electromechanical works, gyms, courts, sports complexes, amphitheatres, auditoriums, earthworks, diagnosis, industrial developments, works inspection of public procuracies, multidisciplinary projects, legal representation, heavy machinery and equipment and supplies sales, services in what concerns metallurgy, transformation and exportation of strategic material susceptible of recycling, the waste and metallic residues ferrous or other type of metal, counting with all the authorization required for this activity.</strong>",
+        "It is important to highlight that at present Grupo Dip,C.A. is executing several works and projects to different public entities of the Venezuelan State, it is for this reason that we place at your entire disposal all our services in the <strong>area of projects</strong>, contributing the certified experience of our human capital in the development of the <strong>Venezuela Potencia</strong>."
+      ]
+    },
+    "pillars": [
+      {
+        "title": "Our Mission",
+        "description": "Our mission is to be a leading and innovative company in the development of Projects in general, all with excellent national and international quality standards, with highly trained human resources, at the forefront of technology and state-of-the-art machinery, seeking the satisfaction of our clients. We bet that everything that is done with Venezuelan labor is in order to enhance the values of work, our commitment is firm to be protagonists in the economic and social development of our Country."
+      },
+      {
+        "title": "Our Vision",
+        "description": "To become the leading company in the development of innovative and sustainable projects, with qualified labor, transforming spaces into environments that improve the quality of life of the population. Our vision is to be a vanguard company that contributes to the economic development of Venezuela in these times where the commitment to the Homeland is non-negotiable."
+      }
+    ],
+    "values": {
+      "badge": "Our Values",
+      "items": [
+        {
+          "title": "Honesty",
+          "description": "Rectitude, transparency, human quality in our actions and decision making."
+        },
+        {
+          "title": "Integrity",
+          "description": "Having moral principles and constant work for the creation of a better future."
+        },
+        {
+          "title": "Quality",
+          "description": "Satisfactory response to the needs and expectations of the requested requirements."
+        },
+        {
+          "title": "Teamwork",
+          "description": "Constant work, fostering it with teams with high levels of efficiency and professionalism."
+        },
+        {
+          "title": "Innovation",
+          "description": "Making people's lives easier. But above all, it is based on these advances reaching those who need them."
+        },
+        {
+          "title": "Sustainability",
+          "description": "We are committed to the protection of the environment and the contribution to the sustainable development of our country."
+        }
+      ]
     }
   }
 }
