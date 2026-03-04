@@ -1,5 +1,4 @@
 import { cva } from "class-variance-authority";
-import { CompassIcon } from "lucide-react";
 import { TypographyH1 } from "@/components/ui/typography";
 import { COMPANY_NAME } from "@/constants";
 import { cn } from "@/lib/utils";
@@ -36,9 +35,17 @@ type TImagotypeProps = {
 };
 
 export default function Imagotype({ className, size }: TImagotypeProps) {
+  const alt = COMPANY_NAME.replace(/ /g, "-");
+
   return (
     <div className={cn("flex items-center gap-2", className)}>
-      <CompassIcon className={imagotypeIconVariants({ size })} />
+      <img
+        alt={alt}
+        loading="eager"
+        decoding="sync"
+        src="/logo.webp"
+        className={imagotypeIconVariants({ size })}
+      />
       <TypographyH1
         className={cn("uppercase", imagotypeFontVariants({ size }))}
       >

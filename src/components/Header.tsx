@@ -3,9 +3,9 @@ import Imagotype from "@/components/Imagotype";
 import ToggleLanguage from "@/components/ToggleLanguage";
 import ToggleTheme from "@/components/ToggleTheme";
 import { Button } from "@/components/ui/button";
+import { ACTIONS_TEXT } from "@/constants";
 import useActions from "@/hooks/useActions";
 import useI18n from "@/hooks/useI18n";
-import { ACTIONS_TEXT } from "@/constants";
 
 export default function Header() {
   const { t } = useI18n();

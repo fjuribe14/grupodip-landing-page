@@ -2,10 +2,10 @@ import HomeShowcaseImages from "@/components/home/showcase/HomeShowcaseImages";
 import TextBadge from "@/components/TextBadge";
 import { Button } from "@/components/ui/button";
 import { TypographyH2 } from "@/components/ui/typography";
+import { ACTIONS_TEXT } from "@/constants";
+import useActions from "@/hooks/useActions";
 import useI18n from "@/hooks/useI18n";
 import HomeShowcaseList from "./HomeShowcaseList";
-import useActions from "@/hooks/useActions";
-import { ACTIONS_TEXT } from "@/constants";
 
 export default function HomeShowcaseSection() {
   const { t } = useI18n();

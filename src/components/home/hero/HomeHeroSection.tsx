@@ -3,9 +3,9 @@ import { motion } from "motion/react";
 import TextBadge from "@/components/TextBadge";
 import { Button } from "@/components/ui/button";
 import { TypographyH2, TypographyMuted } from "@/components/ui/typography";
-import useI18n from "@/hooks/useI18n";
-import useActions from "@/hooks/useActions";
 import { ACTIONS_TEXT } from "@/constants";
+import useActions from "@/hooks/useActions";
+import useI18n from "@/hooks/useI18n";
 
 export default function HomeHeroSection() {
   const { t } = useI18n();
