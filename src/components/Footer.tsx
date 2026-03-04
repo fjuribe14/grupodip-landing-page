@@ -1,6 +1,7 @@
 import {
   EarthIcon,
   GlobeIcon,
+  InstagramIcon,
   MailIcon,
   MapPinIcon,
   NetworkIcon,
@@ -13,7 +14,8 @@ import {
   COMPANY_NAME_FULL,
   CURRENT_YEAR,
   EMAIL,
-  PHONE_NUMBER,
+  INSTAGRAM,
+  PHONE_NUMBERS,
 } from "@/constants";
 import useI18n from "@/hooks/useI18n";
 
@@ -104,10 +106,18 @@ export default function Footer() {
             {t("footer.links.contact.title")}
           </h6>
           <ul className="space-y-3">
+            {PHONE_NUMBERS.map((phoneNumber) => (
+              <li key={phoneNumber} className="flex items-start gap-3">
+                <PhoneIcon className="size-4 text-primary shrink-0" />
+                <TypographyMuted className="text-sm">
+                  {phoneNumber}
+                </TypographyMuted>
+              </li>
+            ))}
             <li className="flex items-start gap-3">
-              <PhoneIcon className="size-4 text-primary shrink-0" />
+              <InstagramIcon className="size-4 text-primary shrink-0" />
               <TypographyMuted className="text-sm">
-                {PHONE_NUMBER}
+                @{INSTAGRAM}
               </TypographyMuted>
             </li>
             <li className="flex items-start gap-3">

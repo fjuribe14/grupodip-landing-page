@@ -1,4 +1,4 @@
-import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
+import { InstagramIcon, MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import { motion } from "motion/react";
 import ContactUsForm from "@/components/contactUs/ContactUsForm";
 import TextBadge from "@/components/TextBadge";
@@ -7,7 +7,7 @@ import {
   TypographyMuted,
   TypographyP,
 } from "@/components/ui/typography";
-import { ADDRESS, EMAIL, PHONE_NUMBER } from "@/constants";
+import { ADDRESS, EMAIL, INSTAGRAM, PHONE_NUMBERS } from "@/constants";
 import useI18n from "@/hooks/useI18n";
 
 export default function ContactUsSection() {
@@ -22,7 +22,12 @@ export default function ContactUsSection() {
     {
       icon: PhoneIcon,
       title: t("contact.phone"),
-      value: PHONE_NUMBER,
+      value: PHONE_NUMBERS.join(" / "),
+    },
+    {
+      icon: InstagramIcon,
+      title: "Instagram",
+      value: `@${INSTAGRAM}`,
     },
     {
       icon: MailIcon,
