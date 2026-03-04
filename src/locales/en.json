@@ -144,5 +144,19 @@
         }
       ]
     }
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Let's talk about your next project",
+    "description": "Our team of specialized engineers is at your disposal to advise you and provide you with the best technical solution for your work.",
+    "address": "Main Office",
+    "phone": "Phones",
+    "email": "Email",
+    "form": {
+      "fullName": "Full Name",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send Message"
+    }
   }
 }

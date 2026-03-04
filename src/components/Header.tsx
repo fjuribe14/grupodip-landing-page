@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import Imagotype from "@/components/Imagotype";
 import ToggleLanguage from "@/components/ToggleLanguage";
 import ToggleTheme from "@/components/ToggleTheme";
@@ -10,6 +10,12 @@ import useI18n from "@/hooks/useI18n";
 export default function Header() {
   const { t } = useI18n();
   const { goToWhatsapp } = useActions();
+  const navigate = useNavigate();
+
+  const handleScrollToServices = () => {
+    navigate("/");
+    document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
@@ -21,9 +27,13 @@ export default function Header() {
           <Link className="text-sm font-semibold" to="/">
             {t("navbar.home")}
           </Link>
-          <a className="text-sm font-semibold" href="#services">
+          {/* biome-ignore lint/a11y/useButtonType: false positive */}
+          <button
+            className="text-sm font-semibold cursor-pointer"
+            onClick={handleScrollToServices}
+          >
             {t("navbar.services")}
-          </a>
+          </button>
           <Link className="text-sm font-semibold" to="/about">
             {t("navbar.about")}
           </Link>

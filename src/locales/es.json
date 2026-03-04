@@ -156,5 +156,19 @@
         }
       ]
     }
+  },
+  "contact": {
+    "badge": "Contacto",
+    "title": "Hablemos de su próximo proyecto",
+    "description": "Nuestro equipo de ingenieros especializados está a su disposición para asesorarle y brindarle la mejor solución técnica para su obra.",
+    "address": "Sede Principal",
+    "phone": "Teléfonos",
+    "email": "Correo Electrónico",
+    "form": {
+      "fullName": "Nombre Completo",
+      "phone": "Teléfono",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
   }
 }
