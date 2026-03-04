@@ -1,4 +1,4 @@
-import { SchoolIcon, SlidersVertical, TractorIcon } from "lucide-react";
+import { LeafIcon, ToyBrickIcon, TractorIcon } from "lucide-react";
 import { motion } from "motion/react";
 import { useMemo } from "react";
 import type { THomeServicesCardProps } from "@/components/home/services/HomeServicesCard";
@@ -13,7 +13,7 @@ export default function HomeServicesSection() {
   const services: THomeServicesCardProps[] = useMemo(
     () => [
       {
-        icon: SlidersVertical,
+        icon: ToyBrickIcon,
         title: t("home.services.cards.0.title"),
         description: t("home.services.cards.0.description"),
       },
@@ -23,7 +23,7 @@ export default function HomeServicesSection() {
         description: t("home.services.cards.1.description"),
       },
       {
-        icon: SchoolIcon,
+        icon: LeafIcon,
         title: t("home.services.cards.2.title"),
         description: t("home.services.cards.2.description"),
       },
@@ -34,7 +34,10 @@ export default function HomeServicesSection() {
   if (!services) return null;
 
   return (
-    <section className="py-24 bg-neutral-100 dark:bg-neutral-900/20">
+    <section
+      id="services"
+      className="py-24 bg-neutral-100 dark:bg-neutral-900/20"
+    >
       <div className="max-w-7xl mx-auto px-6 mb-6 md:mb-12 flex justify-between items-end">
         <div className="max-w-2xl">
           <TextBadge className="font-bold uppercase tracking-widest mb-6">
@@ -53,6 +56,7 @@ export default function HomeServicesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
+            className="h-full"
           >
             <HomeServicesCard {...service} />
           </motion.div>

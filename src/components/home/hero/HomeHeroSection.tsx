@@ -4,9 +4,12 @@ import TextBadge from "@/components/TextBadge";
 import { Button } from "@/components/ui/button";
 import { TypographyH2, TypographyMuted } from "@/components/ui/typography";
 import useI18n from "@/hooks/useI18n";
+import useActions from "@/hooks/useActions";
+import { ACTIONS_TEXT } from "@/constants";
 
 export default function HomeHeroSection() {
   const { t } = useI18n();
+  const { goToWhatsapp } = useActions();
 
   return (
     <section className="relative w-full min-h-[85vh] grid grid-cols-1 md:grid-cols-2 overflow-hidden">
@@ -69,11 +72,17 @@ export default function HomeHeroSection() {
               size="lg"
               id="hero-button"
               className=" bg-navy hover:bg-navy/90"
+              onClick={() => goToWhatsapp(ACTIONS_TEXT.quoteProject)}
             >
               {t("home.hero.button")}
               <ArrowRight className="size-4" />
             </Button>
-            <Button size={"lg"} id="hero-button" variant="outline">
+            <Button
+              onClick={() => goToWhatsapp(ACTIONS_TEXT.downloadCatalog)}
+              size={"lg"}
+              id="hero-button"
+              variant="outline"
+            >
               {t("home.hero.button2")}
             </Button>
           </motion.div>

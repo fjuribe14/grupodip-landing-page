@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { TypographyH2, TypographyMuted } from "@/components/ui/typography";
+import { ACTIONS_TEXT } from "@/constants";
+import useActions from "@/hooks/useActions";
 import useI18n from "@/hooks/useI18n";
 
 export default function HomeCTASection() {
   const { t } = useI18n();
+  const { goToWhatsapp } = useActions();
 
   return (
     <section className="py-20 bg-neutral-100 dark:bg-neutral-900/20">
@@ -19,12 +22,14 @@ export default function HomeCTASection() {
           <div className="flex flex-wrap justify-center gap-4 relative z-10">
             <Button
               size={"lg"}
+              onClick={() => goToWhatsapp(ACTIONS_TEXT.quoteProject)}
               className="bg-primary text-white px-10 py-4 rounded-lg font-bold hover:bg-blue-700 transition-all"
             >
               {t("home.cta.button1")}
             </Button>
             <Button
               size={"lg"}
+              onClick={() => goToWhatsapp(ACTIONS_TEXT.downloadCatalog)}
               className="bg-white/10 text-white border border-white/20 px-10 py-4 rounded-lg font-bold hover:bg-white/20 transition-all"
             >
               {t("home.cta.button2")}

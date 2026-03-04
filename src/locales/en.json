@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "home": "Home",
     "services": "Services",
     "projects": "Projects",
     "about": "About",
@@ -91,6 +92,13 @@
       "description": "Request a free quote and speak with one of our specialized engineers.",
       "button1": "Schedule Consultation",
       "button2": "Download Catalog"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "About Us",
+      "title": "More than a decade of experience and excellence",
+      "description": "Grupo Dip, C.A, is a company founded in 2012, with 100% Venezuelan capital and partners, which initially specialized in providing products and services for the sports and corporate sector. This experience allowed our company to identify the needs of the different state entities that we served satisfactorily, and that is why in 2019 we decided to adapt to the circumstances our country was going through and focus our services on the Projects area. This initiative has allowed us to provide services such as: Civil, mechanical and electrical engineering, quality audits for contract awards, remodeling of civil works of all types, electromechanical works, gyms, courts, sports centers, amphitheaters, auditoriums, earthmoving, diagnosis, industrial developments, inspection of procurement works, multidisciplinary projects, legal representation, heavy machinery and sale of equipment and supplies, services related to metallurgy, transformation and export of strategic material susceptible to recycling, ferrous metal waste or other types of metal, having all the required permits for this activity. It is important to highlight that Grupo Dip, C.A. is currently carrying out several works and projects for different public organizations of the Venezuelan State, which is why we place at your disposal all our services in the projects area, contributing the certified experience of our human capital for the development of Venezuela Potencia."
     }
   }
 }

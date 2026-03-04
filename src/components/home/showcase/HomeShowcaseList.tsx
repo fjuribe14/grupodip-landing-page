@@ -1,4 +1,5 @@
 import { CheckIcon } from "lucide-react";
+import { motion } from "motion/react";
 import { TypographyLarge, TypographyMuted } from "@/components/ui/typography";
 import useI18n from "@/hooks/useI18n";
 
@@ -13,7 +14,13 @@ export default function HomeShowcaseList() {
         const key = title.toLowerCase().replace(" ", "-");
 
         return (
-          <li key={key} className="flex gap-4">
+          <motion.li
+            key={key}
+            className="flex gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             <div className="shrink-0 w-8 h-8 rounded-full bg-green-500/10 text-green-500 flex items-center justify-center">
               <CheckIcon className="size-3" />
             </div>
@@ -25,7 +32,7 @@ export default function HomeShowcaseList() {
                 {description}
               </TypographyMuted>
             </div>
-          </li>
+          </motion.li>
         );
       })}
     </ul>

@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "home": "Inicio",
     "services": "Servicios",
     "projects": "Proyectos",
     "about": "Nosotros",
@@ -53,6 +54,18 @@
       "title": "Soluciones Integrales de Ingeniería",
       "cards": [
         {
+          "title": "Suministros",
+          "description": "Suministro de materiales para la construcción y mantenimiento de infraestructuras."
+        },
+        {
+          "title": "Construcción, Montaje y Mantenimiento",
+          "description": "Construcción, montaje y mantenimiento de obras civiles, eléctricas, mecánicas y metalúrgicas."
+        },
+        {
+          "title": "Manejo y Logística de Pasivos Ambientales",
+          "description": "Gestión integral de residuos y materiales de desecho, asegurando el cumplimiento normativo y la protección del medio ambiente."
+        },
+        {
           "title": "Metalurgia e Industrial",
           "description": "Fabricación y montaje de estructuras metálicas de alta resistencia, silos industriales y galpones a medida."
         },
@@ -91,6 +104,13 @@
       "description": "Solicite un presupuesto sin compromiso y hable con uno de nuestros ingenieros especializados.",
       "button1": "Agendar Consultoría",
       "button2": "Descargar catálogo"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Sobre Nosotros",
+      "title": "Mas de una decada de trayectoria y excelencia",
+      "description": "Grupo Dip, C.A, es una empresa fundada en el año 2012, con capital y socios 100% venezolanos, que en sus inicios se especializó en brindar productos y servicios dirigidos al área deportiva y corporativa. Esta experiencia permitió a nuestra empresa visualizar las necesidades de los diferentes entes del Estado a los cuales atendimos satisfactoriamente, y es por ello que en el año 2019 decidimos adaptarnos a la coyuntura que atravesaba nuestro País y enfocar nuestros servicios al área de Proyectos. \nEsta iniciativa nos ha permitido brindar servicios tales como: Ingeniería civil, mecánica y eléctrica, auditorías de calidad para contratación de obras, remodelaciones de obras civiles de todo tipo, obras electromecánicas, gimnasios, canchas, polideportivos, anﬁteatros, auditorios, movimientos de tierra, diagnóstico, desarrollos industriales, inspección de obras de procura, proyectos multidisciplinarios, representaciones legales, maquinaria pesada y venta de equipos e insumos, servicios en lo referente a la metalúrgica, transformación y exportación de material estratégico susceptible de reciclaje, los desechos y residuos metálicos ferrosos u otro tipo de metal, contando con toda la permisología exigida para esta actividad. Es importante resaltar, que en la actualidad Grupo Dip,C.A. se encuentra ejecutando varias obras y proyectos a diferentes organismos públicos del Estado venezolano, es por ello que colocamos a su entera disposición todos nuestros servicios en el área de proyectos, aportando la experiencia certiﬁcada de nuestro capital humano en aras del desarrollo de la Venezuela Potencia."
     }
   }
 }

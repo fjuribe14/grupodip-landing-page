@@ -4,9 +4,12 @@ import { Button } from "@/components/ui/button";
 import { TypographyH2 } from "@/components/ui/typography";
 import useI18n from "@/hooks/useI18n";
 import HomeShowcaseList from "./HomeShowcaseList";
+import useActions from "@/hooks/useActions";
+import { ACTIONS_TEXT } from "@/constants";
 
 export default function HomeShowcaseSection() {
   const { t } = useI18n();
+  const { goToWhatsapp } = useActions();
 
   return (
     <section className="py-24 bg-white dark:bg-background">
@@ -21,7 +24,11 @@ export default function HomeShowcaseSection() {
               {t("home.showcase.title")}
             </TypographyH2>
             <HomeShowcaseList />
-            <Button size={"lg"} className="mt-12">
+            <Button
+              size={"lg"}
+              className="mt-12"
+              onClick={() => goToWhatsapp(ACTIONS_TEXT.quoteProject)}
+            >
               {t("home.showcase.button")}
             </Button>
           </div>

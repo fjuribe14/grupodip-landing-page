@@ -1,58 +1,69 @@
+import { motion } from "motion/react";
 import { YEARS_OF_EXPERIENCE } from "@/constants";
 import useI18n from "@/hooks/useI18n";
+import { cn } from "@/lib/utils";
 
 export default function HomeShowcaseImages() {
+  const images = [
+    {
+      src: "/showcase/1.webp",
+      className: "h-64",
+      alt: "Close up of steel beam connection",
+    },
+    {
+      src: "/showcase/2.webp",
+      className: "h-48",
+      alt: "Engineer looking at blueprints on site",
+    },
+    {
+      src: "/showcase/3.webp",
+      className: "h-48",
+      alt: "Large yellow excavator in action",
+    },
+    {
+      src: "/showcase/4.webp",
+      className: "h-64",
+      alt: "Modern soccer stadium interior",
+    },
+  ];
+
   const { t } = useI18n();
+
   return (
     <div className="relative">
-      <div className="grid grid-cols-2 gap-4">
-        <div className="space-y-4">
-          <div className="h-64 rounded-xl overflow-hidden shadow-lg">
+      <div className="columns-2">
+        {images.map((image, i) => (
+          <motion.div
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 100 }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            key={image.alt}
+            className={cn(
+              "rounded-xl overflow-hidden shadow-lg mb-4 break-inside-avoid",
+              image.className,
+            )}
+          >
             <img
-              src="/showcase/1.webp"
-              alt="Close up of steel beam connection"
+              src={image.src}
+              alt={image.alt}
               className="w-full h-full object-cover"
               loading="lazy"
               decoding="async"
             />
-          </div>
-          <div className="h-48 rounded-xl overflow-hidden shadow-lg">
-            <img
-              src="/showcase/2.webp"
-              alt="Engineer looking at blueprints on site"
-              className="w-full h-full object-cover"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-        </div>
-        <div className="space-y-4 pt-8">
-          <div className="h-48 rounded-xl overflow-hidden shadow-lg">
-            <img
-              src="/showcase/3.webp"
-              alt="Large yellow excavator in action"
-              className="w-full h-full object-cover"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-          <div className="h-64 rounded-xl overflow-hidden shadow-lg">
-            <img
-              src="/showcase/4.webp"
-              alt="Modern soccer stadium interior"
-              className="w-full h-full object-cover"
-              loading="lazy"
-              decoding="async"
-            />
-          </div>
-        </div>
+          </motion.div>
+        ))}
       </div>
-      <div className="absolute -bottom-6 -right-6 bg-primary text-white p-8 rounded-2xl shadow-2xl flex flex-col items-center">
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
+        className="absolute -bottom-6 right-0 md:-right-6 bg-primary text-white p-8 rounded-2xl shadow-2xl flex flex-col items-center"
+      >
         <span className="text-5xl font-black">{YEARS_OF_EXPERIENCE}</span>
         <span className="text-xs uppercase font-bold tracking-widest text-center mt-2">
           {t("home.showcase.experience")}
         </span>
-      </div>
+      </motion.div>
     </div>
   );
 }
