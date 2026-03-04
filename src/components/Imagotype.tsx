@@ -8,7 +8,7 @@ const imagotypeFontVariants = cva("", {
     size: {
       sm: "text-sm md:text-md",
       md: "text-md md:text-lg",
-      lg: "text-lg md:text-xl",
+      lg: "text-md md:text-xl",
     },
   },
   defaultVariants: {
