@@ -222,4 +222,11 @@ El sitio está alojado en **Netlify** y se despliega automáticamente al hacer p
 
 ---
 
+## 📧 Mails
+
+- cotizaciones@proyectosgrupodip.com
+- administracion@proyectosgrupodip.com
+- ventas@proyectosgrupodip.com
+- asesorias@proyectosgrupodip.com
+
 *Manual generado para Grupo Dip C.A. — Actualizado en Marzo 2026.*
