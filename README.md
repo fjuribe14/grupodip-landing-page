@@ -164,7 +164,7 @@ es.json
 
 ### Sitemap
 
-Disponible en: `https://grupodip.com/sitemap.xml`
+Disponible en: `https://proyectosgrupodip.com/sitemap.xml`
 
 ### Datos estructurados (JSON-LD)
 
@@ -214,9 +214,9 @@ El sitio está alojado en **Netlify** y se despliega automáticamente al hacer p
 
 | Recurso | URL |
 |---|---|
-| Sitio web | https://grupodip.com |
-| Sitemap | https://grupodip.com/sitemap.xml |
-| Robots | https://grupodip.com/robots.txt |
+| Sitio web | https://proyectosgrupodip.com |
+| Sitemap | https://proyectosgrupodip.com/sitemap.xml |
+| Robots | https://proyectosgrupodip.com/robots.txt |
 | Google Search Console | https://search.google.com/search-console |
 | Google Analytics | https://analytics.google.com |
 

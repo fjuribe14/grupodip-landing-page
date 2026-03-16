@@ -9,7 +9,7 @@ interface SEOProps {
   ogType?: "website" | "article";
 }
 
-const SITE_URL = "https://grupodip.com";
+const SITE_URL = "https://proyectosgrupodip.com";
 const DEFAULT_OG_IMAGE = `${SITE_URL}/logo.webp`;
 
 export function useSEO({
