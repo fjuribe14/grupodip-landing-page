@@ -204,7 +204,7 @@ El sitio está alojado en **Netlify** y se despliega automáticamente al hacer p
 
 | Herramienta | ID | Para qué sirve |
 |---|---|---|
-| Google Analytics 4 | `G-R116026005` | Visitas, sesiones, páginas vistas |
+| Google Analytics 4 | `G-15JEE66G3X` | Visitas, sesiones, páginas vistas |
 
 > Para ver el tráfico del sitio: [analytics.google.com](https://analytics.google.com)
 
