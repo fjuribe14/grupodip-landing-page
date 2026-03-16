@@ -8,8 +8,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export class SocialLink {
-  getWhatsappUrl(text: string) {
-    const nomalizeWhatsapp = WHATSAPP.replace(/[-\s]/g, "");
+  getWhatsappUrl(text: string, number: string = WHATSAPP) {
+    const nomalizeWhatsapp = number.replace(/[-\s]/g, "");
 
     return `https://wa.me/${nomalizeWhatsapp}?text=${text}`;
   }

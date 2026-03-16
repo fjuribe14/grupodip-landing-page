@@ -10,6 +10,8 @@ export const PHONE_NUMBERS = [
   "+58 212-472-7746",
   "+58 212-472-3109",
 ];
+export const PHONE_NUMBERS_WHATSAPP = ["+58 414-243-8807", "+58 412-270-8807"];
+
 export const ADDRESS =
   "Calle 9 con Avenida El Parque Urb. La Paz, El Paraiso, Ccs - Vzla.";
 export const CURRENT_YEAR = new Date().getFullYear();

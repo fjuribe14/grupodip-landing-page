@@ -32,9 +32,14 @@ const imagotypeIconVariants = cva("", {
 type TImagotypeProps = {
   className?: string;
   size?: "sm" | "md" | "lg";
+  showName?: boolean;
 };
 
-export default function Imagotype({ className, size }: TImagotypeProps) {
+export default function Imagotype({
+  className,
+  size,
+  showName,
+}: TImagotypeProps) {
   const alt = COMPANY_NAME.replace(/ /g, "-");
 
   return (
@@ -46,11 +51,13 @@ export default function Imagotype({ className, size }: TImagotypeProps) {
         src="/logo.webp"
         className={imagotypeIconVariants({ size })}
       />
-      <TypographyH1
-        className={cn("uppercase", imagotypeFontVariants({ size }))}
-      >
-        {COMPANY_NAME}
-      </TypographyH1>
+      {showName && (
+        <TypographyH1
+          className={cn("uppercase", imagotypeFontVariants({ size }))}
+        >
+          {COMPANY_NAME}
+        </TypographyH1>
+      )}
     </div>
   );
 }
