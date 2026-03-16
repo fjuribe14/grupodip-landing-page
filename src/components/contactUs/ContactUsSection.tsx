@@ -1,5 +1,6 @@
 import { InstagramIcon, MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import { motion } from "motion/react";
+import { WhatsappIconOutline } from "@/assets/icons";
 import ContactUsForm from "@/components/contactUs/ContactUsForm";
 import TextBadge from "@/components/TextBadge";
 import {
@@ -7,7 +8,13 @@ import {
   TypographyMuted,
   TypographyP,
 } from "@/components/ui/typography";
-import { ADDRESS, EMAIL, INSTAGRAM, PHONE_NUMBERS } from "@/constants";
+import {
+  ADDRESS,
+  EMAIL,
+  INSTAGRAM,
+  PHONE_NUMBERS,
+  PHONE_NUMBERS_WHATSAPP,
+} from "@/constants";
 import useI18n from "@/hooks/useI18n";
 
 export default function ContactUsSection() {
@@ -28,6 +35,11 @@ export default function ContactUsSection() {
       icon: InstagramIcon,
       title: "Instagram",
       value: `@${INSTAGRAM}`,
+    },
+    {
+      icon: WhatsappIconOutline,
+      title: "Whatsapp",
+      value: PHONE_NUMBERS_WHATSAPP.join(" / "),
     },
     {
       icon: MailIcon,

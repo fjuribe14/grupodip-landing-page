@@ -38,7 +38,7 @@ type TImagotypeProps = {
 export default function Imagotype({
   className,
   size,
-  showName,
+  showName = true,
 }: TImagotypeProps) {
   const alt = COMPANY_NAME.replace(/ /g, "-");
 

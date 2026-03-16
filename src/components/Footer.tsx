@@ -7,6 +7,7 @@ import {
   NetworkIcon,
   PhoneIcon,
 } from "lucide-react";
+import { WhatsappIconOutline } from "@/assets/icons";
 import Imagotype from "@/components/Imagotype";
 import { TypographyMuted } from "@/components/ui/typography";
 import {
@@ -16,6 +17,7 @@ import {
   EMAIL,
   INSTAGRAM,
   PHONE_NUMBERS,
+  PHONE_NUMBERS_WHATSAPP,
 } from "@/constants";
 import useI18n from "@/hooks/useI18n";
 
@@ -109,6 +111,14 @@ export default function Footer() {
             {PHONE_NUMBERS.map((phoneNumber) => (
               <li key={phoneNumber} className="flex items-start gap-3">
                 <PhoneIcon className="size-4 text-primary shrink-0" />
+                <TypographyMuted className="text-sm">
+                  {phoneNumber}
+                </TypographyMuted>
+              </li>
+            ))}
+            {PHONE_NUMBERS_WHATSAPP.map((phoneNumber) => (
+              <li key={phoneNumber} className="flex items-start gap-3">
+                <WhatsappIconOutline className="size-4 text-primary shrink-0" />
                 <TypographyMuted className="text-sm">
                   {phoneNumber}
                 </TypographyMuted>
